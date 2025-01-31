@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-declare -A epochs=(["mnli"]=30 ["mrpc"]=30 ["qnli"]=25 ["qqp"]=25 ["rte"]=80 ["sst2"]=60 ["stsb"]=40 ["cola"]=8)
+declare -A epochs=(["mnli"]=30 ["mrpc"]=30 ["qnli"]=25 ["qqp"]=25 ["rte"]=80 ["sst2"]=60 ["stsb"]=40 ["cola"]=80)
 declare -A bs=(["mnli"]=128 ["mrpc"]=128 ["qnli"]=128 ["qqp"]=128 ["rte"]=128 ["sst2"]=128 ["stsb"]=128 ["cola"]=64)
 declare -A ml=(["mnli"]=256 ["mrpc"]=256 ["qnli"]=256 ["qqp"]=256 ["rte"]=512 ["sst2"]=256 ["stsb"]=256 ["cola"]=256)
 declare -A lr=(["mnli"]="5e-4" ["mrpc"]="4e-4" ["qnli"]="4e-4" ["qqp"]="4e-4" ["rte"]="4e-4" ["sst2"]="5e-4" ["stsb"]="4e-4" ["cola"]="4e-4")
