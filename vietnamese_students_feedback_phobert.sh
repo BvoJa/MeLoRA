@@ -8,7 +8,7 @@ run(){
   l_num=$3
   seed=42
   learning_rate=1e-4
-  num_train_epochs=20
+  num_train_epochs=5
   batch_size=64
   max_seq_length=256
   lora_alpha=16
