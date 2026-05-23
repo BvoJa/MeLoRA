@@ -7,7 +7,7 @@ run(){
   rank=$2
   l_num=$3
   seed=42
-  learning_rate=3e-5
+  learning_rate=1e-4
   num_train_epochs=80
   batch_size=64
   lora_alpha=16
