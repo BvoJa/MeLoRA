@@ -59,4 +59,4 @@ run(){
 # run "base" "8" "1"
 
 # MELoRA run, same style as vietmed_ner_phobert.sh's mode=me.
-run "me" "8" "2"
+run "base" "8" "1"
