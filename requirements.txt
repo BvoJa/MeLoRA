@@ -5,7 +5,7 @@ appdirs
 bitsandbytes
 black
 black[jupyter]
-datasets
+datasets==2.19.2
 fire
 sentencepiece
 gradio

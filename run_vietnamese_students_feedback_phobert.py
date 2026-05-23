@@ -142,7 +142,20 @@ def main():
 
     set_seed(training_args.seed)
 
-    raw_datasets = load_dataset(model_args.dataset_name, cache_dir=model_args.cache_dir)
+    try:
+        raw_datasets = load_dataset(
+            model_args.dataset_name,
+            cache_dir=model_args.cache_dir,
+            trust_remote_code=True,
+        )
+    except RuntimeError as exc:
+        if "Dataset scripts are no longer supported" in str(exc):
+            raise RuntimeError(
+                "This dataset is published with a Hugging Face dataset loading script. "
+                "Install a script-compatible datasets release first: "
+                "pip install 'datasets==2.19.2'. Then rerun this script."
+            ) from exc
+        raise
     for required_split in ("train", "validation"):
         if required_split not in raw_datasets:
             raise ValueError(f"Dataset {model_args.dataset_name} must contain a '{required_split}' split.")
