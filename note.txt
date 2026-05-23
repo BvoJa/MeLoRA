@@ -1,0 +1,53 @@
+run "base" "8" "1"
+
+***** train metrics *****
+  epoch                    =        5.0
+  train_loss               =     0.3562
+  train_runtime            = 0:18:07.42
+  train_samples_per_second =     52.537
+  train_steps_per_second   =      0.414
+/usr/local/lib/python3.11/site-packages/torch/autograd/function.py:596: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+100%|███████████████████████████████████████████| 13/13 [00:12<00:00,  1.08it/s]
+***** eval metrics *****
+  epoch                   =        5.0
+  eval_accuracy           =     0.9185
+  eval_loss               =     0.2468
+  eval_macro_f1           =     0.6889
+  eval_negative_f1        =     0.9352
+  eval_negative_precision =     0.9192
+  eval_negative_recall    =     0.9518
+  eval_neutral_f1         =     0.1905
+  eval_neutral_precision  =     0.7273
+  eval_neutral_recall     =     0.1096
+  eval_positive_f1        =     0.9411
+  eval_positive_precision =     0.9204
+  eval_positive_recall    =     0.9627
+  eval_runtime            = 0:00:13.16
+  eval_samples_per_second =    120.257
+  eval_steps_per_second   =      0.988
+  eval_weighted_f1        =     0.9039
+/usr/local/lib/python3.11/site-packages/torch/autograd/function.py:596: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+100%|███████████████████████████████████████████| 25/25 [00:25<00:00,  1.00s/it]
+***** test metrics *****
+  test_accuracy           =     0.9071
+  test_loss               =     0.2815
+  test_macro_f1           =     0.6697
+  test_negative_f1        =     0.9291
+  test_negative_precision =     0.9023
+  test_negative_recall    =     0.9574
+  test_neutral_f1         =     0.1481
+  test_neutral_precision  =     0.6364
+  test_neutral_recall     =     0.0838
+  test_positive_f1        =     0.9318
+  test_positive_precision =     0.9151
+  test_positive_recall    =     0.9491
+  test_runtime            = 0:00:26.16
+  test_samples_per_second =    121.003
+  test_steps_per_second   =      0.955
+  test_weighted_f1        =     0.8892
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /kaggle/working/MeLoRA/wandb/offline-run-20260523_082357-8gchqd7b
+wandb: Find logs at: wandb/offline-run-20260523_082357-8gchqd7b/logs
