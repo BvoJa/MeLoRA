@@ -11,4 +11,5 @@ sentencepiece
 gradio
 scipy
 scikit-learn
+seqeval
 wandb
