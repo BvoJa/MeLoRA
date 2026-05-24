@@ -6,7 +6,7 @@ run(){
   mode=$1
   rank=$2
   l_num=$3
-  seed=4227
+  seed=427
   learning_rate=1e-4
   num_train_epochs=5
   batch_size=64
