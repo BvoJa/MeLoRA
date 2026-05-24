@@ -6,7 +6,7 @@ run(){
   mode=$1
   rank=$2
   l_num=$3
-  seed=42
+  seed=4227
   learning_rate=1e-4
   num_train_epochs=5
   batch_size=64
@@ -59,4 +59,4 @@ run(){
 # run "base" "8" "1"
 
 # MELoRA run, same style as vietmed_ner_phobert.sh's mode=me.
-run "me" "4" "2"
+run "me" "8" "2"

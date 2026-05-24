@@ -51,3 +51,60 @@ wandb:
 wandb: You can sync this run to the cloud by running:
 wandb: wandb sync /kaggle/working/MeLoRA/wandb/offline-run-20260523_082357-8gchqd7b
 wandb: Find logs at: wandb/offline-run-20260523_082357-8gchqd7b/logs
+
+
+
+
+
+run "me" "4" "2"
+***** train metrics *****
+  epoch                    =        5.0
+  train_loss               =     0.3753
+  train_runtime            = 0:18:53.91
+  train_samples_per_second =     50.383
+  train_steps_per_second   =      0.397
+/usr/local/lib/python3.11/site-packages/torch/autograd/function.py:596: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+100%|███████████████████████████████████████████| 13/13 [00:13<00:00,  1.01s/it]
+***** eval metrics *****
+  epoch                   =        5.0
+  eval_accuracy           =     0.9141
+  eval_loss               =     0.2572
+  eval_macro_f1           =      0.649
+  eval_negative_f1        =     0.9313
+  eval_negative_precision =     0.9117
+  eval_negative_recall    =     0.9518
+  eval_neutral_f1         =     0.0769
+  eval_neutral_precision  =        0.6
+  eval_neutral_recall     =     0.0411
+  eval_positive_f1        =     0.9387
+  eval_positive_precision =     0.9181
+  eval_positive_recall    =     0.9602
+  eval_runtime            = 0:00:14.27
+  eval_samples_per_second =    110.928
+  eval_steps_per_second   =      0.911
+  eval_weighted_f1        =     0.8957
+/usr/local/lib/python3.11/site-packages/torch/autograd/function.py:596: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+100%|███████████████████████████████████████████| 25/25 [00:27<00:00,  1.10s/it]
+***** test metrics *****
+  test_accuracy           =     0.9056
+  test_loss               =     0.2878
+  test_macro_f1           =     0.6559
+  test_negative_f1        =     0.9278
+  test_negative_precision =     0.8999
+  test_negative_recall    =     0.9574
+  test_neutral_f1         =     0.1093
+  test_neutral_precision  =      0.625
+  test_neutral_recall     =     0.0599
+  test_positive_f1        =     0.9306
+  test_positive_precision =     0.9134
+  test_positive_recall    =     0.9484
+  test_runtime            = 0:00:28.59
+  test_samples_per_second =    110.737
+  test_steps_per_second   =      0.874
+  test_weighted_f1        =      0.886
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /kaggle/working/MeLoRA/wandb/offline-run-20260523_102441-44972dgc
+wandb: Find logs at: wandb/offline-run-20260523_102441-44972dgc/logs
